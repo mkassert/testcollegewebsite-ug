@@ -60,6 +60,11 @@ function CustomNavbar() {
         </p>
       </nav>
       <Container fluid className="d-none d-lg-block p-0">
+        <Navbar bg="light">
+          <Container>
+            <Navbar.Brand href="#home">Brand link</Navbar.Brand>
+          </Container>
+        </Navbar>
         <Navbar
           className="text-white w-100 "
           style={{ backgroundColor: "#030737" }}
@@ -175,26 +180,28 @@ function CustomNavbar() {
           </Navbar.Collapse>
         </Navbar>{" "}
       </Container>
-      <Button
-        variant="outline-dark"
-        className="d-block d-md-none"
-        onClick={toggleOffcanvas}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          fill="currentColor"
-          className="bi bi-list"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fillRule="evenodd"
-            d="M2 3.5a.5.5 0 01.5-.5h11a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5zM1.5 7A.5.5 0 012 6.5h11a.5.5 0 010 1H2a.5.5 0 01-.5-.5zm1 4a.5.5 0 01.5-.5h11a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5z"
-          />
-        </svg>
-      </Button>
-      {/* Offcanvas with menu list */}
+      <Navbar bg="light">
+        <Container className="d-block d-md-none">
+          <Navbar.Brand href="#home">Brand link</Navbar.Brand>
+          <Button variant="outline-dark" onClick={toggleOffcanvas}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              className="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fillRule="evenodd"
+                d="M2 3.5a.5.5 0 01.5-.5h11a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5zM1.5 7A.5.5 0 012 6.5h11a.5.5 0 010 1H2a.5.5 0 01-.5-.5zm1 4a.5.5 0 01.5-.5h11a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5z"
+              />
+            </svg>
+          </Button>
+          {/* Offcanvas with menu list */}
+        </Container>
+      </Navbar>
+
       <div
         className={`offcanvas bg-dark offcanvas-start ${
           showOffcanvas ? "show" : ""
