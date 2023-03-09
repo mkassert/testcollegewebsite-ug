@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Carousel, Button, Container, Row, Col } from "react-bootstrap";
-import { motion } from "framer-motion";
+
 import "./LandingImage.css";
 
 export default function LandingImage() {
