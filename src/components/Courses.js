@@ -38,7 +38,7 @@ export default function Courses() {
               </h6>
             </Col>
           </Row>
-          <Row className="p-5">
+          <Row className="p-5 mx-auto ">
             <Col
               lg={4}
               xs={10}
@@ -48,7 +48,7 @@ export default function Courses() {
             >
               <Card
                 className="p-2 rounded-2 border-white  fw-bolder"
-                style={{ width: "18rem", color: "#030737" }}
+                style={{ color: "#030737" }}
               >
                 <div>
                   <AppSettingsAltIcon
@@ -86,7 +86,7 @@ export default function Courses() {
             >
               <Card
                 className="p-2 rounded-2 border-white  fw-bold"
-                style={{ width: "18rem", color: "#030737" }}
+                style={{ color: "#030737" }}
               >
                 <div>
                   <StoreIcon style={{ height: "40px", width: "60px" }} />
@@ -121,7 +121,7 @@ export default function Courses() {
             >
               <Card
                 className="p-2 rounded-2 border-white  fw-bold"
-                style={{ width: "18rem", color: "#030737" }}
+                style={{ color: "#030737" }}
               >
                 <div>
                   <GavelIcon style={{ height: "40px", width: "60px" }} />

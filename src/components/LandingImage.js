@@ -12,7 +12,7 @@ export default function LandingImage() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item interval={4000}>
+      <Carousel.Item interval={2000}>
         <div className="main_container">
           <img
             className="d-block w-100 image"
@@ -48,7 +48,7 @@ export default function LandingImage() {
           </div>
         </div>
       </Carousel.Item>
-      <Carousel.Item interval={4000}>
+      <Carousel.Item interval={2000}>
         <div className="main_container">
           <img
             className="d-block w-100 image"
