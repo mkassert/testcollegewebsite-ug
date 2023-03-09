@@ -1,0 +1,74 @@
+.full-screen-dropdown {
+  position: static !important; /* override the default position */
+  height: fit-content !important;
+}
+
+.full-screen-dropdown .dropdown-menu {
+  color: black;
+  position: absolute !important; /* make the dropdown menu fixed */
+  left: 0;
+  right: 0;
+  /* top: 46px; adjust the top position to match the navbar height */
+  bottom: 0;
+  /* padding-top: 46px; add some padding at the top to make room for the navbar */
+}
+.full-screen-dropdown .dropdown-menu a:hover {
+  background-color: transparent;
+}
+
+.full-screen-dropdown .dropdown-menu.show {
+  background-color: white !important;
+  opacity: 1 !important; /* override the default opacity */
+  visibility: visible !important; /* override the default visibility */
+}
+
+.navbar-nav__links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.navbar-nav__links a:hover,
+.navbar-nav__links a:active {
+  color: yellow;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+@media (min-width: 567px) {
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+#basic-nav-dropdown {
+  color: white;
+}
+
+#basic-nav-dropdown:hover,
+#basic-nav-dropdown:active {
+  color: yellow;
+}
+
+.marquee {
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.navbar-text {
+  background-color: #011a32;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 1rem;
+}

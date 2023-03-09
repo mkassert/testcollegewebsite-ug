@@ -1,0 +1,33 @@
+.container__courses-landing {
+  background-color: #dadaeb;
+
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #dadaeb 7px
+    ),
+    repeating-linear-gradient(#9799b955, #9799b9);
+}
+
+.horizontal-line- {
+  border: 8px solid #030737;
+  margin: 20px 0;
+  opacity: 0.3;
+}
+.horizontal-line-hover {
+  z-index: -1;
+  border-top: 4px solid "#030737";
+  margin: 20px 0;
+  opacity: 1;
+}
+
+.read-more-btn-hover {
+  color: white;
+  background-color: #030737;
+}
+
+.my-card-button:hover,
+.my-card-button:focus {
+  background-color: red;
+  border-color: red;
+}

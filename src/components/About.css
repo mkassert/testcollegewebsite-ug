@@ -1,0 +1,28 @@
+.container-form-image__with-div {
+  position: relative !important;
+}
+.text-container-form-image__with-div {
+  position: absolute;
+  bottom: -5px;
+  background-color: #030737;
+  right: -5px;
+  color: white;
+  font-size: 1.2rem;
+  z-index: 1;
+  width: 70%;
+  height: 60%;
+}
+
+.form-image__with-div {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .container-form-image__with-div {
+    position: static;
+  }
+  .text-container-form-image__with-div {
+    visibility: hidden;
+  }
+}

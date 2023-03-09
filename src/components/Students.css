@@ -1,0 +1,28 @@
+.fluid-container__students-testimonials {
+  background-color: #dadaeb;
+
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #dadaeb 7px
+    ),
+    repeating-linear-gradient(#9799b955, #9799b9);
+}
+.card-container__students-testimonials {
+  background-color: #bbdefb;
+}
+
+.card-container__students-testimonials:hover,
+.card-container__students-testimonials:active {
+  opacity: 0.8;
+  color: black;
+}
+.contol-carousel {
+  color: white;
+  position: absolute;
+}
+.contol-carousel:hover {
+  color: #030737;
+  border: 3px solid #030737;
+  border-radius: 50%;
+}

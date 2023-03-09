@@ -1,0 +1,37 @@
+.main_container {
+  position: relative !important;
+}
+
+.d-block .w-100 .image {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.overlay-image {
+  padding: 10px;
+  color: white;
+  position: absolute !important;
+  height: 100%;
+  width: 70%;
+  bottom: 0%;
+  left: 0%;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  animation: easeup 1s forwards;
+}
+@keyframes easeup {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* .main_container:hover .overlay-image {
+  opacity: 1;
+}
+.d-block .w-100 .image:focus .overlay-image {
+  opacity: 1;
+} */
