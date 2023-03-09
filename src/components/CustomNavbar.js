@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CloseIcon from "@mui/icons-material/Close";
 import AddIcon from "@mui/icons-material/Add";
 import {
   Navbar,
@@ -225,9 +226,10 @@ function CustomNavbar() {
           <h5 className="offcanvas-title" id="offcanvasExampleLabel">
             Offcanvas
           </h5>
+
           <button
             type="button"
-            className="btn-close text-reset"
+            className="btn btn-close btn-warning border bg-light border-3 text-white "
             onClick={toggleOffcanvas}
           ></button>
         </div>
@@ -235,7 +237,7 @@ function CustomNavbar() {
           <ul className="list-unstyled ">
             <li className="mb-3">
               <a href="#" className="w-100 d-block px-3 py-2">
-                Menu Item 1
+                HOME
               </a>
             </li>
             <li>
@@ -250,7 +252,7 @@ function CustomNavbar() {
                   id="dropdown-basic"
                   className="w-100 d-block py-2 ms-0"
                 >
-                  Dropdown Menu
+                  DISCOVER
                   <AddIcon className="ms-5" />
                 </Dropdown.Toggle>
 
@@ -262,12 +264,112 @@ function CustomNavbar() {
                   <ul className="list-unstyled ">
                     <li className="mb-3">
                       <a href="#" className="w-100 d-block px-3 py-2">
-                        Menu Item 1
+                        <h1> ABOUT US</h1>
                       </a>
                     </li>
                     <li>
                       <a href="#" className="w-100 d-block px-3 py-2">
-                        Menu Item 2
+                        Vision & Philosophy
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Executive Director's Message
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Director General's Message
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Governing Body Mandatory Disclosure
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Mandatory Disclosure
+                      </a>
+                    </li>
+                    <li className="mb-3">
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        <h1> STUDENTS CLUB</h1>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Communication Club
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Computer Applications Club
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Cultural Club
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Sports Club
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Entrepreneurship Club Environment Club
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Environment Club
+                      </a>
+                    </li>
+                    <li className="mb-3">
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        <h1> DOCUMENTS</h1>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        IQAC
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        SSR CYCLE
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        DVV CLARIFICATION
+                      </a>
+                    </li>
+                    <li className="mb-3">
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        <h1> CAMPUS LIFE</h1>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Wifi Campus
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Hostel
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Library
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="w-100 d-block px-3 py-2">
+                        Events
                       </a>
                     </li>
                   </ul>
