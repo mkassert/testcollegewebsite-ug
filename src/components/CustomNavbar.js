@@ -182,22 +182,33 @@ function CustomNavbar() {
       </Container>
       <Navbar bg="light">
         <Container className="d-block d-md-none">
-          <Navbar.Brand href="#home">Brand link</Navbar.Brand>
-          <Button variant="outline-dark" onClick={toggleOffcanvas}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              className="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fillRule="evenodd"
-                d="M2 3.5a.5.5 0 01.5-.5h11a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5zM1.5 7A.5.5 0 012 6.5h11a.5.5 0 010 1H2a.5.5 0 01-.5-.5zm1 4a.5.5 0 01.5-.5h11a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5z"
-              />
-            </svg>
-          </Button>
+          <Row>
+            <Col xs={10}>
+              <Navbar.Brand href="#home">Brand link</Navbar.Brand>
+            </Col>
+            <Col xs={2}>
+              <Button
+                className=""
+                variant="outline-dark"
+                onClick={toggleOffcanvas}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  className="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M2 3.5a.5.5 0 01.5-.5h11a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5zM1.5 7A.5.5 0 012 6.5h11a.5.5 0 010 1H2a.5.5 0 01-.5-.5zm1 4a.5.5 0 01.5-.5h11a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5z"
+                  />
+                </svg>
+              </Button>
+            </Col>
+          </Row>
+
           {/* Offcanvas with menu list */}
         </Container>
       </Navbar>
