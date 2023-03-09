@@ -5,13 +5,18 @@ import "./LandingImage.css";
 
 export default function LandingImage() {
   const [index, setIndex] = useState(0);
-
+ 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel
+      indicators={true}
+      activeIndex={index}
+      onSelect={handleSelect}
+      
+    >
       <Carousel.Item interval={2000}>
         <div className="main_container">
           <img
