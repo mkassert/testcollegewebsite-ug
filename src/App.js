@@ -14,30 +14,30 @@ export default function App() {
     {
       title: "Card 1",
       description: "This is the first card",
-      image: "https://via.placeholder.com/300x200"
+      image: "https://via.placeholder.com/300x200",
     },
     {
       title: "Card 2",
       description: "This is the second card",
-      image: "https://via.placeholder.com/300x200"
+      image: "https://via.placeholder.com/300x200",
     },
     {
       title: "Card 3",
       description: "This is the third card",
-      image: "https://via.placeholder.com/300x200"
-    }
+      image: "https://via.placeholder.com/300x200",
+    },
   ];
   return (
     <>
       <CustomNavbar />
       <LandingImage />
       <About />
-      {/* <Query /> */}
-      <Courses />
+      <Query />
+      {/* <Courses />
       <Slider />
       <MyCard />
       <Students />
-      <Footer cards={cards} />
+      <Footer cards={cards} /> */}
     </>
   );
 }
