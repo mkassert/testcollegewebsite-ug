@@ -2,6 +2,7 @@ import { Card, Carousel, Row, Col, Container, Button } from "react-bootstrap";
 import ArrowCircleRightRoundedIcon from "@mui/icons-material/ArrowCircleRightRounded";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import styles from "./Slider.module.css";
 
 export default function Slider() {
   return (
@@ -19,7 +20,7 @@ export default function Slider() {
       <Row className="p-4">
         <Col lg={3} xs={10} className="mx-auto">
           <Card
-            className="p-2 rounded-2 border-white text-white fw-bold"
+            className={`p-2 rounded-2 border-white text-white fw-bold  ${styles.aboutipem__cards}`}
             style={{ width: "18rem", backgroundColor: "#030737" }}
           >
             <Card.Img className="rounded-0" variant="top" src="/test.jpg" />
@@ -29,15 +30,15 @@ export default function Slider() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <a href="#">
+              {/* <a href="#">
                 <ArrowCircleRightRoundedIcon />
-              </a>
+              </a> */}
             </Card.Body>
           </Card>
         </Col>
         <Col lg={3} xs={10} className="mx-auto">
           <Card
-            className="p-2 rounded-2 border-white text-white fw-bold"
+            className={`p-2 rounded-2 border-white text-white fw-bold  ${styles.aboutipem__cards}`}
             style={{ width: "18rem", backgroundColor: "#030737" }}
           >
             <Card.Img className="rounded-0" variant="top" src="/test.jpg" />
@@ -47,15 +48,15 @@ export default function Slider() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <a href="#">
+              {/* <a href="#">
                 <ArrowCircleRightRoundedIcon />
-              </a>
+              </a> */}
             </Card.Body>
           </Card>
         </Col>
         <Col lg={3} xs={10} className="mx-auto">
           <Card
-            className="p-2 rounded-2 border-white text-white fw-bold"
+            className={`p-2 rounded-2 border-white text-white fw-bold  ${styles.aboutipem__cards}`}
             style={{ width: "18rem", backgroundColor: "#030737" }}
           >
             <Card.Img className="rounded-0" variant="top" src="/test.jpg" />
@@ -65,15 +66,15 @@ export default function Slider() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <a href="#">
+              {/* <a href="#">
                 <ArrowCircleRightRoundedIcon />
-              </a>
+              </a> */}
             </Card.Body>
           </Card>
         </Col>
         <Col lg={3} xs={10} className=" mx-auto">
           <Card
-            className="p-2 rounded-2 border-white text-white fw-bold"
+            className={`p-2 rounded-2 border-white text-white fw-bold  ${styles.aboutipem__cards}`}
             style={{ width: "18rem", backgroundColor: "#030737" }}
           >
             <Card.Img
@@ -88,9 +89,9 @@ export default function Slider() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <a href="#">
+              {/* <a href="#">
                 <ArrowCircleRightRoundedIcon />
-              </a>
+              </a> */}
             </Card.Body>
           </Card>
         </Col>

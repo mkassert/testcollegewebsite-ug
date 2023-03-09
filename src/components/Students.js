@@ -8,13 +8,13 @@ export default function Students() {
     <Container fluid className="fluid-container__students-testimonials">
       <Container>
         <Row>
-          <Col className="fw-bolder">
+          <Col className="fw-bolder mx-auto text-center">
             <h1>What our students says</h1>
           </Col>
         </Row>
 
         <Row>
-          <Col>
+          <Col className="fw-bolder mx-auto text-center">
             <h5>
               See the upcoming events and stay updated with our latest news
             </h5>

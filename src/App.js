@@ -32,12 +32,11 @@ export default function App() {
       <CustomNavbar />
       <LandingImage />
       <About />
-      <Query />
-      {/* <Courses />
+      <Courses />
       <Slider />
       <MyCard />
       <Students />
-      <Footer cards={cards} /> */}
+      <Footer cards={cards} />
     </>
   );
 }

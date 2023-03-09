@@ -47,7 +47,7 @@ export default function Courses() {
               className=" mx-auto"
             >
               <Card
-                className="p-2 rounded-2 border-white  fw-bolder"
+                className="p-2 rounded-2 border-white  fw-bolder coursescards"
                 style={{ color: "#030737" }}
               >
                 <div>
