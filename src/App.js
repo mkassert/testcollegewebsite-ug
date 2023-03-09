@@ -8,6 +8,7 @@ import MyCard from "./components/MyCard";
 import Slider from "./components/Slider";
 import Courses from "./components/Courses";
 import LandingImage from "./components/LandingImage";
+import Icons from "./components/Icons";
 
 export default function App() {
   const cards = [
@@ -31,6 +32,7 @@ export default function App() {
     <>
       <CustomNavbar />
       <LandingImage />
+      <Icons />
       <About />
       <Courses />
       <Slider />
