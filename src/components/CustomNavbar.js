@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import AddIcon from "@mui/icons-material/Add";
+import Canvasdown from "./Canvasdown";
 import {
   Navbar,
   Nav,
@@ -71,118 +72,118 @@ function CustomNavbar() {
           style={{ backgroundColor: "#030737" }}
           expand="lg"
         >
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mx-auto navbar-nav__links">
-              <Nav.Link href="#home">HOME</Nav.Link>
-              <NavDropdown
-                title={
-                  <span>
-                    DISCOVER <ExpandMoreOutlinedIcon />
-                  </span>
-                }
-                id="basic-nav-dropdown"
-                show={showDropdown}
+          {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+          {/* <Navbar.Collapse id="basic-navbar-nav"> */}
+          <Nav className="mx-auto navbar-nav__links">
+            <Nav.Link href="#home">HOME</Nav.Link>
+            <NavDropdown
+              title={
+                <span>
+                  DISCOVER <ExpandMoreOutlinedIcon />
+                </span>
+              }
+              id="basic-nav-dropdown"
+              show={showDropdown}
+              onMouseEnter={handleDropdown}
+              onMouseLeave={handleDropdown}
+              className="full-screen-dropdown "
+            >
+              <div
                 onMouseEnter={handleDropdown}
                 onMouseLeave={handleDropdown}
-                className="full-screen-dropdown "
+                className="full-screen-dropdown-content bg-secondary style={{height:'fit-content'}}"
               >
-                <div
-                  onMouseEnter={handleDropdown}
-                  onMouseLeave={handleDropdown}
-                  className="full-screen-dropdown-content bg-secondary style={{height:'fit-content'}}"
-                >
-                  {" "}
-                  <Container fluid>
-                    <Row>
-                      <Col>
-                        <NavDropdown.Item href="#action/3.1">
-                          Action
-                        </NavDropdown.Item>
-                      </Col>
-                      <Col>
-                        <NavDropdown.Item href="#action/3.2">
-                          Another action
-                        </NavDropdown.Item>
-                      </Col>
-                      <Col>
-                        <NavDropdown.Item href="#action/3.3">
-                          Something
-                        </NavDropdown.Item>
+                {" "}
+                <Container fluid>
+                  <Row>
+                    <Col>
+                      <NavDropdown.Item href="#action/3.1">
+                        Action
+                      </NavDropdown.Item>
+                    </Col>
+                    <Col>
+                      <NavDropdown.Item href="#action/3.2">
+                        Another action
+                      </NavDropdown.Item>
+                    </Col>
+                    <Col>
+                      <NavDropdown.Item href="#action/3.3">
+                        Something
+                      </NavDropdown.Item>
 
-                        <NavDropdown.Item href="#action/3.4">
-                          Separated link
-                        </NavDropdown.Item>
-                      </Col>
-                    </Row>
-                  </Container>
-                </div>
-              </NavDropdown>
-              <NavDropdown
-                title={
-                  <span>
-                    STUDY <ExpandMoreOutlinedIcon />
-                  </span>
-                }
-                id="basic-nav-dropdown"
-                show={showDropdown}
+                      <NavDropdown.Item href="#action/3.4">
+                        Separated link
+                      </NavDropdown.Item>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
+            </NavDropdown>
+            <NavDropdown
+              title={
+                <span>
+                  STUDY <ExpandMoreOutlinedIcon />
+                </span>
+              }
+              id="basic-nav-dropdown"
+              show={showDropdown}
+              onMouseEnter={handleDropdown}
+              onMouseLeave={handleDropdown}
+              className="full-screen-dropdown "
+            >
+              <div
                 onMouseEnter={handleDropdown}
                 onMouseLeave={handleDropdown}
-                className="full-screen-dropdown "
+                className="full-screen-dropdown-content bg-secondary style={{height:'fit-content'}}"
               >
-                <div
-                  onMouseEnter={handleDropdown}
-                  onMouseLeave={handleDropdown}
-                  className="full-screen-dropdown-content bg-secondary style={{height:'fit-content'}}"
-                >
-                  {" "}
-                  <Container fluid className="fw-light">
-                    <Row>
-                      <Col>
-                        <NavDropdown.Item href="#action/3.1">
-                          <h4>ABOUT US</h4>
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.1">
-                          Vision & Philosophy
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.1"></NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.1">
-                          Executive Director's Message
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.1">
-                          Director General's Message
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.1">
-                          Governing Body
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.1">
-                          Mandatory Disclosure
-                        </NavDropdown.Item>
-                      </Col>
-                      <Col>
-                        <NavDropdown.Item href="#action/3.2">
-                          Another action
-                        </NavDropdown.Item>
-                      </Col>
-                      <Col>
-                        <NavDropdown.Item href="#action/3.3">
-                          Something
-                        </NavDropdown.Item>
+                {" "}
+                <Container fluid className="fw-light">
+                  <Row>
+                    <Col>
+                      <NavDropdown.Item href="#action/3.1">
+                        <h4>ABOUT US</h4>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.1">
+                        Vision & Philosophy
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.1"></NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.1">
+                        Executive Director's Message
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.1">
+                        Director General's Message
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.1">
+                        Governing Body
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.1">
+                        Mandatory Disclosure
+                      </NavDropdown.Item>
+                    </Col>
+                    <Col>
+                      <NavDropdown.Item href="#action/3.2">
+                        Another action
+                      </NavDropdown.Item>
+                    </Col>
+                    <Col>
+                      <NavDropdown.Item href="#action/3.3">
+                        Something
+                      </NavDropdown.Item>
 
-                        <NavDropdown.Item href="#action/3.4">
-                          Separated link
-                        </NavDropdown.Item>
-                      </Col>
-                    </Row>
-                  </Container>
-                </div>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
+                      <NavDropdown.Item href="#action/3.4">
+                        Separated link
+                      </NavDropdown.Item>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
+            </NavDropdown>
+          </Nav>
+          {/* </Navbar.Collapse> */}
         </Navbar>{" "}
       </Container>
       <Navbar bg="light">
-        <Container className="d-block d-md-none">
+        <Container className="d-lg-none d-block">
           <Row>
             <Col xs={10}>
               <Navbar.Brand href="#home">Brand link</Navbar.Brand>
@@ -237,146 +238,11 @@ function CustomNavbar() {
           <ul className="list-unstyled ">
             <li className="mb-3">
               <a href="#" className="w-100 d-block px-3 py-2">
-                HOME
+                <h1>HOME</h1>
               </a>
-            </li>
-            <li>
-              <a href="#" className="w-100 d-block px-3 py-2">
-                Menu Item 2
-              </a>
-            </li>
-            <li className="dropdown">
-              <Dropdown>
-                <Dropdown.Toggle
-                  variant="dark"
-                  id="dropdown-basic"
-                  className="w-100 d-block py-2 ms-0"
-                >
-                  DISCOVER
-                  <AddIcon className="ms-5" />
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu
-                  variant="dark"
-                  className="w-100 d-block px-3 py-2"
-                  style={{ backgroundColor: "transparent", border: "none" }}
-                >
-                  <ul className="list-unstyled ">
-                    <li className="mb-3">
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        <h1> ABOUT US</h1>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Vision & Philosophy
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Executive Director's Message
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Director General's Message
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Governing Body Mandatory Disclosure
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Mandatory Disclosure
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        <h1> STUDENTS CLUB</h1>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Communication Club
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Computer Applications Club
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Cultural Club
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Sports Club
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Entrepreneurship Club Environment Club
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Environment Club
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        <h1> DOCUMENTS</h1>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        IQAC
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        SSR CYCLE
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        DVV CLARIFICATION
-                      </a>
-                    </li>
-                    <li className="mb-3">
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        <h1> CAMPUS LIFE</h1>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Wifi Campus
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Hostel
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Library
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="w-100 d-block px-3 py-2">
-                        Events
-                      </a>
-                    </li>
-                  </ul>
-                </Dropdown.Menu>
-              </Dropdown>
             </li>
           </ul>
+          <Canvasdown />
         </div>
       </div>
     </>
