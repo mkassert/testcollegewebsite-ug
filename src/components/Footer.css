@@ -5,3 +5,20 @@ a {
   text-decoration: none;
   color: white;
 }
+footer {
+  background: inherit;
+  padding: 10px 0;
+  text-align: center;
+}
+footer a {
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726f;
+  transition: all 0.5s ease;
+}
+footer a:first-child {
+  border-left: 1px solid #70726f;
+}
+footer a:hover {
+  color: white;
+}

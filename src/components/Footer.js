@@ -1,3 +1,6 @@
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import {
   Form,
   Stack,
@@ -5,9 +8,10 @@ import {
   Row,
   Col,
   Image,
-  Button
+  Button,
 } from "react-bootstrap";
 import "./Footer.css";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 import SendRoundedIcon from "@mui/icons-material/SendRounded";
 
@@ -40,89 +44,51 @@ export default function Footer() {
 
           <hr />
 
-          <Row className="text-light">
+          <Row className="fs-5 fw-light text-light text-small">
             <Col lg={3} xs={12} md={6}>
               <h5>About IPEM</h5>
               <ul>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    Blogs Events Faculty Contact E - Certificate IPEM in Media
+                    Notices Board
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    Events
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    Faculty
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    Contact
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />E - Certificate
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    IPEM in Media
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
-                </li>
-                <li>
-                  <a href="#">link</a>
-                </li>
-                <li>
-                  <a href="#">link</a>
-                </li>
-              </ul>
-            </Col>
-            <Col lg={3} xs={12} md={6}>
-              <h5>Location</h5>
-              <ul>
-                <li>
-                  <a href="#">link</a>
-                </li>
-                <li>
-                  <a href="#">link</a>
-                </li>
-              </ul>
-              {"  "}
-              <h5>Mail Us:</h5>
-              <ul>
-                <li>
-                  <a href="#">link</a>
-                </li>
-                <li>
-                  <a href="#">link</a>
-                </li>
-              </ul>
-            </Col>
-            <Col lg={3} xs={12} md={6}>
-              <h5>About IPEM</h5>
-              <ul>
-                <li>
-                  <a href="#">link</a>
-                </li>
-                <li>
-                  <a href="#">link</a>
-                </li>
-                <li>
-                  <a href="#">link</a>
-                </li>
-                <li>
-                  <a href="#">link</a>
-                </li>
-                <li>
-                  <a href="#">link</a>
-                </li>
-                <li>
-                  <a href="#">link</a>
-                </li>
-                <li>
-                  <a href="#">link</a>
-                </li>
-                <li>
-                  <a href="#">link</a>
-                </li>
-                <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    Notices Board
+                  </a>
                 </li>
               </ul>
             </Col>
@@ -130,36 +96,121 @@ export default function Footer() {
               <h5>Quick Links</h5>
               <ul>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    NIRF Ranking
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    Unnat Bharat Abhiyan
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    Swayam Knowledge Sharing
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    Knowledge Sharing
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    National Academic Depository(NAD)
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    Professional Associations
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    National Council for Teacher Education(NCTE)
+                  </a>
+                </li>
+              </ul>
+            </Col>
+
+            <Col lg={3} xs={12} md={6}>
+              <h5>Location</h5>
+              <ul>
+                <li>
+                  <a href="#">
+                    <ArrowForwardIcon />
+                    A-13/1, South Side G.T. Road Industrial Area, NH-9 By Pass,
+                    Ghaziabad, U.P.-201010
+                  </a>
+                </li>
+              </ul>
+              {"  "}
+            </Col>
+
+            <Col lg={3} xs={12} md={6}>
+              <h5>Contact Us:</h5>
+              <ul>
+                <li>
+                  <a href="#">
+                    <LocalPhoneIcon />
+                    0120-4174500
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <PhoneIphoneIcon />
+                    +91 - 9910491474
+                  </a>
                 </li>
                 <li>
-                  <a href="#">link</a>
+                  <a href="#">
+                    <MailOutlineIcon />
+                    info@ipemgzb.ac.in
+                  </a>
                 </li>
               </ul>
             </Col>
           </Row>
-          <Row></Row>
+          <Row>
+            <Col>
+              <div className="text-center p-3 text-white">
+                © 2022 IPEM. All rights reserved | Design & Developed by
+                <a
+                  style={{ textDecoration: "none" }}
+                  className="text-white"
+                  href="https://mdbootstrap.com/"
+                >
+                  <strong> Assert IT</strong>
+                </a>
+              </div>
+            </Col>
+            <Col xs={6} className="">
+              <footer>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </footer>
+            </Col>
+          </Row>
         </Container>
       </Container>
     </>
