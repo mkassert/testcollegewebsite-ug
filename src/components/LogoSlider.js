@@ -9,6 +9,13 @@ const logos = [
   { id: 3, name: "logo3", src: "logo1.jpg" },
   { id: 4, name: "logo4", src: "logo1.jpg" },
   { id: 5, name: "logo5", src: "logo1.jpg" },
+  { id: 5, name: "logo5", src: "logo1.jpg" },
+
+  { id: 6, name: "logo5", src: "logo1.jpg" },
+
+  { id: 7, name: "logo5", src: "logo1.jpg" },
+
+  { id: 8, name: "logo5", src: "logo1.jpg" },
 ];
 
 const settings = {
@@ -51,7 +58,7 @@ class LogoSlider extends Component {
     return (
       <>
         <Container fluid>
-          <Container className="border">
+          <Container className="">
             <Slider {...settings}>
               {logos.map((logo) => (
                 <div key={logo.id}>

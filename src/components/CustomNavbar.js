@@ -183,7 +183,7 @@ function CustomNavbar() {
           {/* </Navbar.Collapse> */}
         </Navbar>{" "}
       </Container>
-      <Navbar bg="light">
+      <Navbar bg="light p-0">
         <Container className="d-lg-none d-block">
           <Row>
             <Col xs={10}>
