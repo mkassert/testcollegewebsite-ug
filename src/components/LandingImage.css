@@ -1,12 +1,19 @@
 .main_container {
   position: relative !important;
   height: 60vh;
+  overflow: hidden;
 }
 
 .d-block .w-100 .image {
   display: block !important;
   width: 100% !important;
   height: auto !important;
+}
+.image {
+  transition: transform 5s ease-in-out;
+}
+.main_container:hover .image {
+  transform: scale(1.2);
 }
 
 .overlay-image {
@@ -28,6 +35,11 @@
   100% {
     transform: translateY(0%);
   }
+}
+.overlay-image h1 {
+  font-family: "PT Serif", Sans-serif;
+  font-size: 75px;
+  font-weight: 800;
 }
 
 /* .main_container:hover .overlay-image {

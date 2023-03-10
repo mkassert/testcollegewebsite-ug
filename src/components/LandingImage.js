@@ -20,29 +20,35 @@ export default function LandingImage() {
             alt="First slide"
           />
           <div className="overlay-image">
-            <Container>
+            <Container className="p-5">
               <Row>
                 <Col>
                   {" "}
-                  <h1> Admission Open</h1>
+                  <div>
+                    <h1>Over 25 years of Excellence</h1>
+                  </div>
                 </Col>
               </Row>
               <Row>
-                <Col>
+                <Col></Col>
+                <Col lg={6} xs={8} className="text-center">
                   {" "}
                   <p>
                     {" "}
                     welcome to the best institute for furthering your career
                   </p>
                 </Col>
+                <Col></Col>
               </Row>
               <Row className="m-2">
+                <Col></Col>
                 <Col xs={4} lg={4}>
                   <Button className="btn-outline-warning ">Apply Now</Button>
                 </Col>
                 <Col xs={4} lg={4}>
                   <Button className="btn-outline-warning  ">Contact Us</Button>
                 </Col>
+                <Col></Col>
               </Row>
             </Container>
           </div>
@@ -56,29 +62,35 @@ export default function LandingImage() {
             alt="First slide"
           />
           <div className="overlay-image">
-            <Container>
+            <Container className="p-5">
               <Row>
                 <Col>
                   {" "}
-                  <h1> Admission Open</h1>
+                  <div>
+                    <h1>Over 25 years of Excellence</h1>
+                  </div>
                 </Col>
               </Row>
               <Row>
-                <Col>
+                <Col></Col>
+                <Col lg={6} xs={8} className="text-center">
                   {" "}
                   <p>
                     {" "}
                     welcome to the best institute for furthering your career
                   </p>
                 </Col>
+                <Col></Col>
               </Row>
               <Row className="m-2">
+                <Col></Col>
                 <Col xs={4} lg={4}>
                   <Button className="btn-outline-warning ">Apply Now</Button>
                 </Col>
                 <Col xs={4} lg={4}>
-                  <Button className="btn-primary ">Contact Us</Button>
+                  <Button className="btn-outline-warning  ">Contact Us</Button>
                 </Col>
+                <Col></Col>
               </Row>
             </Container>
           </div>
