@@ -47,13 +47,11 @@ export default function Courses() {
               className=" mx-auto"
             >
               <Card
-                className="p-2 rounded-2 border-white  fw-bolder coursescards"
+                className="p-2 rounded-2 border-white mb-2 fw-bolder coursescards"
                 style={{ color: "#030737" }}
               >
-                <div>
-                  <AppSettingsAltIcon
-                    style={{ height: "40px", width: "60px" }}
-                  />
+                <div style={{ height: "80px", width: "60px" }}>
+                  <Card.Img fluid="true" variant="top" src="/ug.png" />
                 </div>
 
                 <Card.Body>
@@ -85,11 +83,11 @@ export default function Courses() {
               className=" mx-auto"
             >
               <Card
-                className="p-2 rounded-2 border-white  fw-bold"
+                className="p-2 rounded-2 border-white mb-2 fw-bold"
                 style={{ color: "#030737" }}
               >
-                <div>
-                  <StoreIcon style={{ height: "40px", width: "60px" }} />
+                <div style={{ height: "80px", width: "60px" }}>
+                  <Card.Img fluid="true" variant="top" src="/pg.png" />
                 </div>
                 <Card.Body>
                   <Card.Title>PG Campus</Card.Title>
@@ -120,11 +118,11 @@ export default function Courses() {
               className=" mx-auto"
             >
               <Card
-                className="p-2 rounded-2 border-white  fw-bold"
+                className="p-2 mb-2 rounded-2 border-white  fw-bold"
                 style={{ color: "#030737" }}
               >
-                <div>
-                  <GavelIcon style={{ height: "40px", width: "60px" }} />
+                <div className="ms-2" style={{ height: "80px", width: "60px" }}>
+                  <Card.Img fluid="true" variant="top" src="/law.png" />
                 </div>
                 <Card.Body>
                   <Card.Title>Law Campus</Card.Title>
