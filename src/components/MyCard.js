@@ -12,14 +12,21 @@ import {
 export default function MyCard() {
   return (
     <Container fluid style={{ position: "relative" }}>
-      <Container>
+      <Container className="border">
         <Row className="p-2">
           <Col lg={4} sm={12} className=" ">
-            <Image
-              className="mr-4 rounded"
-              thumbnail="true"
-              src="https://media.gettyimages.com/id/157482029/photo/stack-of-books.jpg?s=1024x1024&w=gi&k=20&c=LBkfIEzmAzb8Dt7u1Yo0U_TX0d4YWoGexSscX71Z5Ng="
-            ></Image>
+            <Container>
+              <Row>
+                <Col>
+                  <Image
+                    fluid="true"
+                    className="mr-4 h-60 rounded"
+                    thumbnail="true"
+                    src="/Request-Query.jpg"
+                  ></Image>
+                </Col>
+              </Row>
+            </Container>
           </Col>
 
           <Col lg={8} sm={12}>
