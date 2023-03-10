@@ -11,6 +11,7 @@ import {
   Col,
   Button,
   Dropdown,
+  Image,
 } from "react-bootstrap";
 import "./CustomNavbar.css"; // import custom CSS file
 import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
@@ -63,7 +64,9 @@ function CustomNavbar() {
       </nav>
       <Container fluid className="d-none d-lg-block p-0">
         <Navbar bg="light">
-          <Container>logo</Container>
+          <Container>
+            <Image fluid="true" src="/header ugGOI.png"></Image>
+          </Container>
         </Navbar>
         <Navbar
           className="text-white w-100 "
@@ -72,7 +75,7 @@ function CustomNavbar() {
         >
           {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
           {/* <Navbar.Collapse id="basic-navbar-nav"> */}
-          <Nav className="mx-auto navbar-nav__links">
+          <Nav className="mx-auto navbar-nav__links ">
             <Nav.Link href="#home">HOME</Nav.Link>
             <NavDropdown
               title={
@@ -184,7 +187,9 @@ function CustomNavbar() {
         <Container className="d-lg-none d-block">
           <Row>
             <Col xs={10}>
-              <Navbar.Brand href="#home">Brand link</Navbar.Brand>
+              <Navbar.Brand href="#home">
+                <Image fluid="true" src="/header ugGOI.png"></Image>
+              </Navbar.Brand>
             </Col>
             <Col xs={2}>
               <Button

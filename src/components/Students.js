@@ -2,6 +2,7 @@ import { Container, Row, Col, Image, Carousel, Card } from "react-bootstrap";
 import "./Students.css";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardRounded";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import LogoSlider from "./LogoSlider";
 // import IconButton from "@material-ui/core/IconButton";
 export default function Students() {
   return (
@@ -114,7 +115,9 @@ export default function Students() {
             </Carousel>
           </Col>
         </Row>
-        <Row></Row>
+        <Row>
+          <LogoSlider />
+        </Row>
       </Container>
     </Container>
   );
