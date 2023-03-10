@@ -1,5 +1,18 @@
 import React, { useState } from "react";
-import { Navbar, Nav, NavDropdown, Container, Row, Col } from "react-bootstrap";
+import CloseIcon from "@mui/icons-material/Close";
+import AddIcon from "@mui/icons-material/Add";
+import Canvasdown from "./Canvasdown";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Container,
+  Row,
+  Col,
+  Button,
+  Dropdown,
+  Image,
+} from "react-bootstrap";
 import "./CustomNavbar.css"; // import custom CSS file
 import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
 
@@ -16,9 +29,30 @@ function CustomNavbar() {
     }
   };
 
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
+
+  const toggleOffcanvas = () => {
+    console.log("hi");
+    setShowOffcanvas(!showOffcanvas);
+  };
+
+  const [showCanvasDropdown, setShowCanvasDropdown] = useState(false);
+
+  const handleCanvasDropdown = () => {
+    if (showCanvasDropdown) {
+      setTimeout(() => {
+        console.log("hi close");
+        setShowCanvasDropdown(!showCanvasDropdown);
+      }, 1500);
+    } else {
+      console.log("hi open");
+      setShowCanvasDropdown(!showCanvasDropdown);
+    }
+  };
+
   return (
     <>
-      <nav className="ms-0 navbar-text fw-bolder text-warning ">
+      <nav className=" ms-0 navbar-text fw-bolder text-warning 	">
         <p className="marquee">
           sjfdkg sgjk sakgh jdf gdsjkhf sdgf fsdkig sdfgText that scrolls from
           left to right... uasdihs uid a
@@ -28,18 +62,22 @@ function CustomNavbar() {
           </a>
         </p>
       </nav>
-      <Navbar
-        className="text-white"
-        style={{ backgroundColor: "#030737" }}
-        expand="lg"
-      >
-        {/* <Navbar.Brand href="#home">React Bootstrap Navbar</Navbar.Brand> */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto navbar-nav__links">
+      <Container fluid className="d-none d-lg-block p-0">
+        <Navbar bg="light">
+          <Container>
+            <Image fluid="true" src="/header ugGOI.png"></Image>
+          </Container>
+        </Navbar>
+        <Navbar
+          className="text-white w-100 "
+          style={{ backgroundColor: "#030737" }}
+          expand="lg"
+        >
+          {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+          {/* <Navbar.Collapse id="basic-navbar-nav"> */}
+          <Nav className="mx-auto navbar-nav__links ">
             <Nav.Link href="#home">HOME</Nav.Link>
             <NavDropdown
-              // remove the default caret icon
               title={
                 <span>
                   DISCOVER <ExpandMoreOutlinedIcon />
@@ -49,7 +87,7 @@ function CustomNavbar() {
               show={showDropdown}
               onMouseEnter={handleDropdown}
               onMouseLeave={handleDropdown}
-              className="full-screen-dropdown " // add custom class
+              className="full-screen-dropdown "
             >
               <div
                 onMouseEnter={handleDropdown}
@@ -79,12 +117,10 @@ function CustomNavbar() {
                       </NavDropdown.Item>
                     </Col>
                   </Row>
-                  {/* wrap the dropdown items in a div */}
                 </Container>
               </div>
             </NavDropdown>
             <NavDropdown
-              // remove the default caret icon
               title={
                 <span>
                   STUDY <ExpandMoreOutlinedIcon />
@@ -94,7 +130,7 @@ function CustomNavbar() {
               show={showDropdown}
               onMouseEnter={handleDropdown}
               onMouseLeave={handleDropdown}
-              className="full-screen-dropdown " // add custom class
+              className="full-screen-dropdown "
             >
               <div
                 onMouseEnter={handleDropdown}
@@ -140,13 +176,78 @@ function CustomNavbar() {
                       </NavDropdown.Item>
                     </Col>
                   </Row>
-                  {/* wrap the dropdown items in a div */}
                 </Container>
               </div>
             </NavDropdown>
           </Nav>
-        </Navbar.Collapse>
+          {/* </Navbar.Collapse> */}
+        </Navbar>{" "}
+      </Container>
+      <Navbar bg="light">
+        <Container className="d-lg-none d-block">
+          <Row>
+            <Col xs={10}>
+              <Navbar.Brand href="#home">
+                <Image fluid="true" src="/header ugGOI.png"></Image>
+              </Navbar.Brand>
+            </Col>
+            <Col xs={2}>
+              <Button
+                className=""
+                variant="outline-dark"
+                onClick={toggleOffcanvas}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  className="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M2 3.5a.5.5 0 01.5-.5h11a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5zM1.5 7A.5.5 0 012 6.5h11a.5.5 0 010 1H2a.5.5 0 01-.5-.5zm1 4a.5.5 0 01.5-.5h11a.5.5 0 010 1H2.5a.5.5 0 01-.5-.5z"
+                  />
+                </svg>
+              </Button>
+            </Col>
+          </Row>
+
+          {/* Offcanvas with menu list */}
+        </Container>
       </Navbar>
+
+      <div
+        className={`offcanvas bg-dark offcanvas-start ${
+          showOffcanvas ? "show" : ""
+        }`}
+        tabIndex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div className="offcanvas-header">
+          <h5 className="offcanvas-title" id="offcanvasExampleLabel">
+            Offcanvas
+          </h5>
+
+          <button
+            type="button"
+            className="btn btn-close btn-warning border bg-light border-3 text-white "
+            onClick={toggleOffcanvas}
+          ></button>
+        </div>
+        <div className="offcanvas-body">
+          <ul className="list-unstyled ">
+            <li className="mb-3">
+              <a href="#" className="w-100 d-block px-3 py-2">
+                <h1>HOME</h1>
+              </a>
+            </li>
+          </ul>
+          <Canvasdown />
+        </div>
+      </div>
     </>
   );
 }

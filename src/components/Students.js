@@ -2,19 +2,20 @@ import { Container, Row, Col, Image, Carousel, Card } from "react-bootstrap";
 import "./Students.css";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardRounded";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import LogoSlider from "./LogoSlider";
 // import IconButton from "@material-ui/core/IconButton";
 export default function Students() {
   return (
     <Container fluid className="fluid-container__students-testimonials">
       <Container>
         <Row>
-          <Col className="fw-bolder">
+          <Col className="fw-bolder mx-auto text-center">
             <h1>What our students says</h1>
           </Col>
         </Row>
 
         <Row>
-          <Col>
+          <Col className="fw-bolder mx-auto text-center">
             <h5>
               See the upcoming events and stay updated with our latest news
             </h5>
@@ -114,7 +115,9 @@ export default function Students() {
             </Carousel>
           </Col>
         </Row>
-        <Row></Row>
+        <Row>
+          <LogoSlider />
+        </Row>
       </Container>
     </Container>
   );
