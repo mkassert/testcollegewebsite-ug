@@ -17,6 +17,7 @@ const Icons = () => {
     fontWeight: "bold",
     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
     cursor: "pointer",
+    zIndex: "100",
   };
   const textDivStyle = {
     position: "fixed",

@@ -63,9 +63,7 @@ function CustomNavbar() {
       </nav>
       <Container fluid className="d-none d-lg-block p-0">
         <Navbar bg="light">
-          <Container>
-            <Navbar.Brand href="#home">Brand link</Navbar.Brand>
-          </Container>
+          <Container>logo</Container>
         </Navbar>
         <Navbar
           className="text-white w-100 "

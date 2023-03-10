@@ -179,7 +179,7 @@ export default function Footer() {
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col lg={6} xs={12}>
               <div className="text-center p-3 text-white">
                 © 2022 IPEM. All rights reserved | Design & Developed by
                 <a
@@ -191,7 +191,7 @@ export default function Footer() {
                 </a>
               </div>
             </Col>
-            <Col xs={6} className="">
+            <Col xs={12} lg={6} className="">
               <footer>
                 <a href="#">
                   <i class="fa fa-facebook"></i>
