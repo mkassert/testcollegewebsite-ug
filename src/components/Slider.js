@@ -28,8 +28,11 @@ export default function Slider() {
               className={`p-2 rounded-2 border-white text-white   ${styles.aboutipem__cards}`}
               style={{ width: "18rem", backgroundColor: "#030737" }}
             >
+              <div style={{ height: "80px", width: "60px" }}>
+                <Card.Img fluid="true" variant="top" src="/moot-court.png" />
+              </div>
               {/* <Card.Img className="rounded-0" variant="top" src="/test.jpg" /> */}
-              <GavelIcon style={{ height: "40px", width: "60px" }} />
+              {/* <GavelIcon style={{ height: "40px", width: "60px" }} /> */}
 
               <Card.Body>
                 <Card.Title>Moot Court</Card.Title>
@@ -50,7 +53,9 @@ export default function Slider() {
               className={`p-2 rounded-2 border-white text-white   ${styles.aboutipem__cards}`}
               style={{ width: "18rem", backgroundColor: "#030737" }}
             >
-              <CelebrationIcon style={{ height: "40px", width: "60px" }} />
+              <div style={{ height: "80px", width: "60px" }}>
+                <Card.Img fluid="true" variant="top" src="/ullas.png" />
+              </div>
               <Card.Body>
                 <Card.Title>Ullas</Card.Title>
                 <Card.Text>
@@ -70,7 +75,9 @@ export default function Slider() {
               className={`p-2 rounded-2 border-white text-white   ${styles.aboutipem__cards}`}
               style={{ width: "18rem", backgroundColor: "#030737" }}
             >
-              <MicExternalOnIcon style={{ height: "40px", width: "60px" }} />
+              <div style={{ height: "80px", width: "60px" }}>
+                <Card.Img fluid="true" variant="top" src="/conference.png" />
+              </div>
               <Card.Body>
                 <Card.Title>International Conferences</Card.Title>
                 <Card.Text>
@@ -89,7 +96,9 @@ export default function Slider() {
               className={`p-2 rounded-2 border-white text-white   ${styles.aboutipem__cards}`}
               style={{ width: "18rem", backgroundColor: "#030737" }}
             >
-              <CastForEducationIcon style={{ height: "40px", width: "60px" }} />
+              <div style={{ height: "80px", width: "60px" }}>
+                <Card.Img fluid="true" variant="top" src="/seminar.png" />
+              </div>
 
               <Card.Body>
                 <Card.Title>Seminars</Card.Title>
