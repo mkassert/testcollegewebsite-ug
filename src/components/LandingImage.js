@@ -5,22 +5,17 @@ import "./LandingImage.css";
 
 export default function LandingImage() {
   const [index, setIndex] = useState(0);
- 
+
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
 
   return (
-    <Carousel
-      indicators={true}
-      activeIndex={index}
-      onSelect={handleSelect}
-      
-    >
-      <Carousel.Item interval={2000}>
+    <Carousel indicators={true} activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item>
         <div className="main_container">
           <img
-            className="d-block w-100 image"
+            className="d-block h-100 w-100 image"
             src="https://media.gettyimages.com/id/157482029/photo/stack-of-books.jpg?s=1024x1024&w=gi&k=20&c=LBkfIEzmAzb8Dt7u1Yo0U_TX0d4YWoGexSscX71Z5Ng="
             alt="First slide"
           />
@@ -53,10 +48,10 @@ export default function LandingImage() {
           </div>
         </div>
       </Carousel.Item>
-      <Carousel.Item interval={2000}>
+      <Carousel.Item>
         <div className="main_container">
           <img
-            className="d-block w-100 image"
+            className="d-block h-100 w-100 image"
             src="https://media.gettyimages.com/id/157482029/photo/stack-of-books.jpg?s=1024x1024&w=gi&k=20&c=LBkfIEzmAzb8Dt7u1Yo0U_TX0d4YWoGexSscX71Z5Ng="
             alt="First slide"
           />

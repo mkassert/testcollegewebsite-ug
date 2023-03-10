@@ -52,14 +52,30 @@ function CustomNavbar() {
 
   return (
     <>
-      <nav className=" ms-0 navbar-text fw-bolder text-warning 	">
+      <nav className=" ms-0 navbar-text fw-bolder text-white 	">
         <p className="marquee">
-          sjfdkg sgjk sakgh jdf gdsjkhf sdgf fsdkig sdfgText that scrolls from
-          left to right... uasdihs uid a
-          <a className="text-uppercase text-white" href="#">
+          Registration Open For 2022 : MBA, MCA, BBA, B.Com(H), BCA, BA.LLB,
+          LLB,B.Ed
+          <a className="text-uppercase text-warning" href="#">
             {" "}
-            Register here
+            Click for Admission Enquiry |
           </a>
+          Apply for GD/PI (MBA/MCA Session 22-24)
+          <a className="text-uppercase text-warning" href="#">
+            {" "}
+            Click Here
+          </a>
+          | UGC Important Links{" "}
+          <a className="text-uppercase text-warning" href="#">
+            {" "}
+            Click Here
+          </a>
+          | career@ipem{" "}
+          <a className="text-uppercase text-warning" href="#">
+            {" "}
+            Click Here
+          </a>{" "}
+          for Apply
         </p>
       </nav>
       <Container fluid className="d-none d-lg-block p-0">
