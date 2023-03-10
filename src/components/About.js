@@ -5,7 +5,7 @@ import {
   Form,
   Card,
   Row,
-  Col
+  Col,
 } from "react-bootstrap";
 
 import "./About.css";
@@ -20,11 +20,15 @@ export default function About() {
             {" "}
             <Container>
               <Row className="p-2">
-                <Col lg={6} sm={12} className="container-form-image__with-div">
+                <Col
+                  lg={6}
+                  sm={12}
+                  className="container-form-image__with-div p-5"
+                >
                   <Image
                     className="mr-4 form-image__with-div"
                     fluid="true"
-                    src="https://media.gettyimages.com/id/157482029/photo/stack-of-books.jpg?s=1024x1024&w=gi&k=20&c=LBkfIEzmAzb8Dt7u1Yo0U_TX0d4YWoGexSscX71Z5Ng="
+                    src="/aboutlanding.jpg"
                   ></Image>
                   <div class="px-2 text-start text-container-form-image__with-div">
                     <div>

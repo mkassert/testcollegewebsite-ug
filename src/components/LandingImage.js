@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Carousel, Button, Container, Row, Col } from "react-bootstrap";
-
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import "./LandingImage.css";
 
 export default function LandingImage() {
@@ -11,43 +11,38 @@ export default function LandingImage() {
   };
 
   return (
-    <Carousel indicators={true} activeIndex={index} onSelect={handleSelect}>
+    <Carousel indicators={false} activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <div className="main_container">
           <img
             className="d-block h-100 w-100 image"
-            src="https://media.gettyimages.com/id/157482029/photo/stack-of-books.jpg?s=1024x1024&w=gi&k=20&c=LBkfIEzmAzb8Dt7u1Yo0U_TX0d4YWoGexSscX71Z5Ng="
+            src="/landing.jpg"
             alt="First slide"
           />
           <div className="overlay-image">
             <Container className="p-5">
-              <Row>
+              <Row style={{ height: "50%" }}>
+                <Col lg={2} xs={1}></Col>
                 <Col>
                   {" "}
-                  <div>
+                  <div className="fs-5">
                     <h1>Over 25 years of Excellence</h1>
+                    <p>
+                      {" "}
+                      welcome to the best institute for furthering your career
+                    </p>
                   </div>
                 </Col>
               </Row>
-              <Row>
-                <Col></Col>
-                <Col lg={6} xs={8} className="text-center">
-                  {" "}
-                  <p>
-                    {" "}
-                    welcome to the best institute for furthering your career
-                  </p>
-                </Col>
-                <Col></Col>
-              </Row>
-              <Row className="m-2">
+              <Row></Row>
+              <Row></Row>
+              <Row className="">
                 <Col></Col>
                 <Col xs={4} lg={4}>
-                  <Button className="btn-outline-warning ">Apply Now</Button>
+                  <Button className="btn-outline-warning m-2">Apply Now</Button>
+                  <Button className="btn-outline-warning ">Contact Us</Button>
                 </Col>
-                <Col xs={4} lg={4}>
-                  <Button className="btn-outline-warning  ">Contact Us</Button>
-                </Col>
+
                 <Col></Col>
               </Row>
             </Container>
@@ -58,38 +53,32 @@ export default function LandingImage() {
         <div className="main_container">
           <img
             className="d-block h-100 w-100 image"
-            src="https://media.gettyimages.com/id/157482029/photo/stack-of-books.jpg?s=1024x1024&w=gi&k=20&c=LBkfIEzmAzb8Dt7u1Yo0U_TX0d4YWoGexSscX71Z5Ng="
+            src="/landing.jpg"
             alt="First slide"
           />
           <div className="overlay-image">
             <Container className="p-5">
-              <Row>
+              <Row style={{ height: "50%" }}>
+                <Col lg={2} xs={1}></Col>
                 <Col>
                   {" "}
-                  <div>
-                    <h1>Over 25 years of Excellence</h1>
+                  <div className="fs-5">
+                    <h1>Career Counselling and Guidance</h1>
+                    <p> Schedule your chat with Career Counsellor</p>
                   </div>
                 </Col>
               </Row>
-              <Row>
+              <Row></Row>
+              <Row></Row>
+              <Row className="">
                 <Col></Col>
-                <Col lg={6} xs={8} className="text-center">
-                  {" "}
-                  <p>
-                    {" "}
-                    welcome to the best institute for furthering your career
-                  </p>
+                <Col xs={6} lg={4}>
+                  <Button className="btn-outline-warning m-2">
+                    Apply Now <ArrowForwardIcon />
+                  </Button>
+                  <Button className="btn-white ">Contact Us</Button>
                 </Col>
-                <Col></Col>
-              </Row>
-              <Row className="m-2">
-                <Col></Col>
-                <Col xs={4} lg={4}>
-                  <Button className="btn-outline-warning ">Apply Now</Button>
-                </Col>
-                <Col xs={4} lg={4}>
-                  <Button className="btn-outline-warning  ">Contact Us</Button>
-                </Col>
+
                 <Col></Col>
               </Row>
             </Container>
