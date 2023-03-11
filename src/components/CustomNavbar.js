@@ -86,116 +86,124 @@ function CustomNavbar() {
         </Navbar>
         <Navbar
           className="text-white w-100 "
-          style={{ backgroundColor: "#030737" }}
+          style={{
+            backgroundColor: "#030737",
+            position: "sticky",
+            zIndex: "999",
+            top: "0",
+          }}
           expand="lg"
+          sticky="top"
         >
-          {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
-          {/* <Navbar.Collapse id="basic-navbar-nav"> */}
-          <Nav className="mx-auto navbar-nav__links ">
-            <Nav.Link href="#home">HOME</Nav.Link>
-            <NavDropdown
-              title={
-                <span>
-                  DISCOVER <ExpandMoreOutlinedIcon />
-                </span>
-              }
-              id="basic-nav-dropdown"
-              show={showDropdown}
-              onMouseEnter={handleDropdown}
-              onMouseLeave={handleDropdown}
-              className="full-screen-dropdown "
-            >
-              <div
+          <Container>
+            {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+            {/* <Navbar.Collapse id="basic-navbar-nav"> */}
+            <Nav className="mx-auto navbar-nav__links ">
+              <Nav.Link href="#home">HOME</Nav.Link>
+              <NavDropdown
+                title={
+                  <span>
+                    DISCOVER <ExpandMoreOutlinedIcon />
+                  </span>
+                }
+                id="basic-nav-dropdown"
+                show={showDropdown}
                 onMouseEnter={handleDropdown}
                 onMouseLeave={handleDropdown}
-                className="full-screen-dropdown-content bg-secondary style={{height:'fit-content'}}"
+                className="full-screen-dropdown "
               >
-                {" "}
-                <Container fluid>
-                  <Row>
-                    <Col>
-                      <NavDropdown.Item href="#action/3.1">
-                        Action
-                      </NavDropdown.Item>
-                    </Col>
-                    <Col>
-                      <NavDropdown.Item href="#action/3.2">
-                        Another action
-                      </NavDropdown.Item>
-                    </Col>
-                    <Col>
-                      <NavDropdown.Item href="#action/3.3">
-                        Something
-                      </NavDropdown.Item>
+                <div
+                  onMouseEnter={handleDropdown}
+                  onMouseLeave={handleDropdown}
+                  className="full-screen-dropdown-content bg-secondary style={{height:'fit-content'}}"
+                >
+                  {" "}
+                  <Container fluid>
+                    <Row>
+                      <Col>
+                        <NavDropdown.Item href="#action/3.1">
+                          Action
+                        </NavDropdown.Item>
+                      </Col>
+                      <Col>
+                        <NavDropdown.Item href="#action/3.2">
+                          Another action
+                        </NavDropdown.Item>
+                      </Col>
+                      <Col>
+                        <NavDropdown.Item href="#action/3.3">
+                          Something
+                        </NavDropdown.Item>
 
-                      <NavDropdown.Item href="#action/3.4">
-                        Separated link
-                      </NavDropdown.Item>
-                    </Col>
-                  </Row>
-                </Container>
-              </div>
-            </NavDropdown>
-            <NavDropdown
-              title={
-                <span>
-                  STUDY <ExpandMoreOutlinedIcon />
-                </span>
-              }
-              id="basic-nav-dropdown"
-              show={showDropdown}
-              onMouseEnter={handleDropdown}
-              onMouseLeave={handleDropdown}
-              className="full-screen-dropdown "
-            >
-              <div
+                        <NavDropdown.Item href="#action/3.4">
+                          Separated link
+                        </NavDropdown.Item>
+                      </Col>
+                    </Row>
+                  </Container>
+                </div>
+              </NavDropdown>
+              <NavDropdown
+                title={
+                  <span>
+                    STUDY <ExpandMoreOutlinedIcon />
+                  </span>
+                }
+                id="basic-nav-dropdown"
+                show={showDropdown}
                 onMouseEnter={handleDropdown}
                 onMouseLeave={handleDropdown}
-                className="full-screen-dropdown-content bg-secondary style={{height:'fit-content'}}"
+                className="full-screen-dropdown "
               >
-                {" "}
-                <Container fluid className="fw-light">
-                  <Row>
-                    <Col>
-                      <NavDropdown.Item href="#action/3.1">
-                        <h4>ABOUT US</h4>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.1">
-                        Vision & Philosophy
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.1"></NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.1">
-                        Executive Director's Message
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.1">
-                        Director General's Message
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.1">
-                        Governing Body
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.1">
-                        Mandatory Disclosure
-                      </NavDropdown.Item>
-                    </Col>
-                    <Col>
-                      <NavDropdown.Item href="#action/3.2">
-                        Another action
-                      </NavDropdown.Item>
-                    </Col>
-                    <Col>
-                      <NavDropdown.Item href="#action/3.3">
-                        Something
-                      </NavDropdown.Item>
+                <div
+                  onMouseEnter={handleDropdown}
+                  onMouseLeave={handleDropdown}
+                  className="full-screen-dropdown-content bg-secondary style={{height:'fit-content'}}"
+                >
+                  {" "}
+                  <Container fluid className="fw-light">
+                    <Row>
+                      <Col>
+                        <NavDropdown.Item href="#action/3.1">
+                          <h4>ABOUT US</h4>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.1">
+                          Vision & Philosophy
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.1"></NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.1">
+                          Executive Director's Message
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.1">
+                          Director General's Message
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.1">
+                          Governing Body
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.1">
+                          Mandatory Disclosure
+                        </NavDropdown.Item>
+                      </Col>
+                      <Col>
+                        <NavDropdown.Item href="#action/3.2">
+                          Another action
+                        </NavDropdown.Item>
+                      </Col>
+                      <Col>
+                        <NavDropdown.Item href="#action/3.3">
+                          Something
+                        </NavDropdown.Item>
 
-                      <NavDropdown.Item href="#action/3.4">
-                        Separated link
-                      </NavDropdown.Item>
-                    </Col>
-                  </Row>
-                </Container>
-              </div>
-            </NavDropdown>
-          </Nav>
+                        <NavDropdown.Item href="#action/3.4">
+                          Separated link
+                        </NavDropdown.Item>
+                      </Col>
+                    </Row>
+                  </Container>
+                </div>
+              </NavDropdown>
+            </Nav>
+          </Container>
           {/* </Navbar.Collapse> */}
         </Navbar>{" "}
       </Container>
