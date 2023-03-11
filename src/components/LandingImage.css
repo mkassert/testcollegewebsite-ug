@@ -25,7 +25,7 @@
   bottom: 0%;
   left: 0%;
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0);
   animation: easeup 1s forwards;
 }
 @keyframes easeup {

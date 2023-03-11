@@ -9,6 +9,7 @@ import Slider from "./components/Slider";
 import Courses from "./components/Courses";
 import LandingImage from "./components/LandingImage";
 import Icons from "./components/Icons";
+import Events from "./components/Events";
 
 export default function App() {
   const cards = [
@@ -38,6 +39,7 @@ export default function App() {
       <Slider />
       <MyCard />
       <Students />
+      <Events />
       <Footer cards={cards} />
     </>
   );
