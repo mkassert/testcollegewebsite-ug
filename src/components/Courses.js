@@ -24,7 +24,7 @@ export default function Courses() {
   return (
     <>
       <Container fluid className="container__courses-landing">
-        <Container>
+        <Container className="pt-5">
           <Row>
             <Col className=" text-center fw-bolder">
               <h1 classNAme="fs-1">Our Outstanding Campus</h1>

@@ -13,7 +13,7 @@ import "./MyCard.css";
 export default function MyCard() {
   return (
     <Container fluid>
-      <Container className="border outer-MyCard-non-fluid">
+      <Container className="border p-5 outer-MyCard-non-fluid">
         <Row className="p-2">
           <Col lg={4} sm={12} className="p-5 ">
             <Container>

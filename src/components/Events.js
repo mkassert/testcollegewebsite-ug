@@ -4,7 +4,7 @@ export default function Events() {
   return (
     <>
       <Container fluid>
-        <Container className="text-center">
+        <Container className="text-center p-5">
           <Row>
             <Col>
               <h2>Upcoming Events & News</h2>

@@ -15,7 +15,7 @@ import ArrowCircleRightRoundedIcon from "@mui/icons-material/ArrowCircleRightRou
 export default function About() {
   return (
     <Container fluid className="bg-white">
-      <Container className="bg-white br-5  ">
+      <Container className="bg-white br-5 p-5 ">
         <Row className="">
           <Col lg={12} sm={12} className="">
             {" "}

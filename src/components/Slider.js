@@ -11,7 +11,7 @@ import styles from "./Slider.module.css";
 export default function Slider() {
   return (
     <Container fluid style={{ backgroundColor: "#030737" }}>
-      <Container className="fw-light">
+      <Container className="fw-light pt-5">
         <Row>
           <Col className="text-white text-center fw-light">
             <h1>About @IPEM</h1>

@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <>
       <Container fluid style={{ backgroundColor: "#030737" }}>
-        <Container>
+        <Container className="p-5">
           <Row className="p-4">
             <Col className="text-light" lg={6} xs={12}>
               <h1 className="fs-bolder">Subscribe with our newslater</h1>
