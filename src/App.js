@@ -10,6 +10,7 @@ import Courses from "./components/Courses";
 import LandingImage from "./components/LandingImage";
 import Icons from "./components/Icons";
 import Events from "./components/Events";
+import About1 from "./pages/About/cmp/About1";
 
 export default function App() {
   const cards = [
@@ -31,7 +32,7 @@ export default function App() {
   ];
   return (
     <>
-      <CustomNavbar />
+      {/* <CustomNavbar />
       <LandingImage />
       <Icons />
       <About />
@@ -40,6 +41,9 @@ export default function App() {
       <MyCard />
       <Students />
       <Events />
+      <Footer cards={cards} /> */}
+      <CustomNavbar />
+      <About1 />
       <Footer cards={cards} />
     </>
   );
