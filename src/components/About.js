@@ -23,14 +23,15 @@ export default function About() {
               <Row className="p-2">
                 <Col
                   lg={6}
-                  sm={12}
-                  className="container-form-image__with-div p-5"
+                  xs={12}
+                  className=" mx-auto container-form-image__with-div p-5"
                 >
                   <Image
                     className="mr-4 form-image__with-div"
                     fluid="true"
                     src="/aboutlanding.jpg"
                   ></Image>
+
                   <div class="text-start d-none d-sm-block text-container-form-image__with-div">
                     <div className="p-4">
                       <i>

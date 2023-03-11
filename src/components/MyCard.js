@@ -8,6 +8,7 @@ import {
   Col,
   Carousel,
 } from "react-bootstrap";
+import "./MyCard.css";
 
 export default function MyCard() {
   return (
@@ -18,12 +19,32 @@ export default function MyCard() {
             <Container>
               <Row>
                 <Col>
-                  <Image
-                    fluid="true"
-                    className="mr-4 h-55 rounded"
-                    thumbnail="true"
-                    src="/Request-Query.jpg"
-                  ></Image>
+                  <div
+                    className="container-outer-relative__over-image"
+                    style={{
+                      backgroundImage: `url('${process.env.PUBLIC_URL}/req.jpg')`,
+                    }}
+                  >
+                    {/* <Image
+                      className="mr-4 w-100 h-100 rounded"
+                      thumbnail="true"
+                      src="/Request-Query.jpg"
+                    ></Image> */}
+                    <Container className="container-query__over-image p-5 bg-tarnsparent">
+                      <Row>
+                        <Col>
+                          <h3 className="fw-bold">Apply And Enroll</h3>
+                          <p>
+                            Every Year, Thousands Of Students Get Selected In
+                            Renowned Companies After Pursuing Programs From Our
+                            UG, PG And Law Campuses. We Are Setting Benchmarks
+                            With Our Remarkable Academic Achievements To Empower
+                            Change And Promote Entrepreneurship.
+                          </p>
+                        </Col>
+                      </Row>
+                    </Container>
+                  </div>
                 </Col>
               </Row>
             </Container>
