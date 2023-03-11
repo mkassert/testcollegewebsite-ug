@@ -49,8 +49,8 @@ export default function About1() {
       </Container>
       <Container fluid className="mt-5 mb-5">
         <Row
-          className="bg-primary text-center text-white p-2"
-          style={{ height: "75px" }}
+          className="text-center text-white p-2"
+          style={{ height: "75px", backgroundColor: "#030737" }}
         >
           <Col>
             <h1>ABOUT US</h1>
@@ -164,93 +164,135 @@ export default function About1() {
       </Container>
       <Container fluid>
         <Container className="p-5 text-center">
-          <Row>
+          <Row className="p-2 m-2">
             <Col lg={12} xs={12}>
               <h1>Governing Body,IPEM</h1>
             </Col>
           </Row>
-          <Row>
+          <Row className="p-2 m-2">
             <Col lg={12} xs={12}>
-              <h1> Mr. A. K. Bansal</h1>
+              <strong className="bg-dark text-white p-2 ">
+                Mr. A. K. Bansal
+              </strong>
             </Col>
+            <Row className="p-2 m-2">
+              <Col lg={12} xs={12}>
+                <b>Chairman,</b>
+              </Col>
+            </Row>
+          </Row>
+          <Row className="p-2 m-2">
             <Col lg={12} xs={12}>
-              <h1> Chairman,</h1>
+              <b> IPEM Group of Institutions</b>
             </Col>
           </Row>
-          <Row>
-            <Col lg={12} xs={12}></Col>
-            <h1> IPEM Group of Institutions</h1>
-          </Row>
-          <Row>
+          <hr />
+          <Row className="p-2 m-2">
             <Col>
               <Container>
-                <Row>
-                  <Col>Mrs. Mithilesh Goel</Col>
+                <Row className="p-2 m-2">
+                  <Col>
+                    <strong className="bg-dark text-white p-2 ">
+                      Mrs. Mithilesh Goel
+                    </strong>
+                  </Col>
                 </Row>
-                <Row>
+                <Row className="p-2 m-2">
                   <Col>Vice Chairperson,</Col>
                 </Row>
-                <Row>
+                <Row className="p-2 m-2">
                   <Col>IPEM Group of Institutions</Col>
                 </Row>
               </Container>
             </Col>
             <Col>
               <Container>
-                <Row>
-                  <Col>Mr. Anupam Goel</Col>
+                <Row className="p-2 m-2">
+                  <Col>
+                    <strong className="bg-dark text-white p-2 ">
+                      Mr. Anupam Goel
+                    </strong>
+                  </Col>
                 </Row>
-                <Row>
+                <Row className="p-2 m-2">
                   <Col>Secretary,</Col>
                 </Row>
-                <Row>
+                <Row className="p-2 m-2">
                   <Col>IPEM Group of Institutions</Col>
                 </Row>
               </Container>
             </Col>
             <Col>
               <Container>
-                <Row>
-                  <Col>Mr. Tanmay Gupta</Col>
+                <Row className="p-2 m-2">
+                  <Col>
+                    <strong className="bg-dark text-white p-2 ">
+                      Mr. Tanmay Gupta
+                    </strong>
+                  </Col>
                 </Row>
-                <Row>
+                <Row className="p-2 m-2">
                   <Col>Member</Col>
                 </Row>
-                <Row>
+                <Row className="p-2 m-2">
                   <Col></Col>
                 </Row>
               </Container>
             </Col>
             <Col>
               <Container>
-                <Row>
-                  <Col></Col>
+                <Row className="p-2 m-2">
+                  <Col>
+                    <strong className="bg-dark text-white p-2 ">
+                      Mr. Sachin Kansal
+                    </strong>
+                  </Col>
                 </Row>
-                <Row>
-                  <Col></Col>
+                <Row className="p-2 m-2">
+                  <Col>Member</Col>
                 </Row>
-                <Row>
+                <Row className="p-2 m-2">
                   <Col></Col>
                 </Row>
               </Container>
             </Col>
             <Col>
               <Container>
-                <Row>
-                  <Col></Col>
+                <Row className="p-2 m-2">
+                  <Col>
+                    <strong className="bg-dark text-white p-2 ">
+                      Mr. S.K. Shukla
+                    </strong>
+                  </Col>
                 </Row>
-                <Row>
-                  <Col></Col>
+                <Row className="p-2 m-2">
+                  <Col>Member</Col>
                 </Row>
-                <Row>
+                <Row className="p-2 m-2">
                   <Col></Col>
                 </Row>
               </Container>
             </Col>
           </Row>
-          <Row>
-            <Col lg={12} xs={12}></Col>
-            <Col lg={6} xs={12} className="p-3"></Col>
+          <hr />
+          <Row className="p-2 m-2">
+            <Col lg={12} xs={12}>
+              <Container>
+                <Row className="p-2 m-2">
+                  <Col>
+                    <strong className="bg-dark text-white p-2 ">
+                      Mr. Umesh Kansal
+                    </strong>
+                  </Col>
+                </Row>
+                <Row className="p-2 m-2">
+                  <Col>Treasurer,</Col>
+                </Row>
+                <Row className="p-2 m-2">
+                  <Col>IPEM Group of Institutions</Col>
+                </Row>
+              </Container>
+            </Col>
           </Row>
         </Container>
       </Container>
