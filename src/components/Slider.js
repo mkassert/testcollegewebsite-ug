@@ -23,7 +23,7 @@ export default function Slider() {
           </Col>
         </Row>
         <Row className="p-4">
-          <Col lg={3} xs={10} className="mx-auto">
+          <Col lg={3} md={6} xs={12} className="mx-auto">
             <Card
               className={`p-2 rounded-2 border-white text-white   ${styles.aboutipem__cards}`}
               style={{ width: "18rem", backgroundColor: "#030737" }}
@@ -48,7 +48,7 @@ export default function Slider() {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={3} xs={10} className="mx-auto">
+          <Col lg={3} md={6} xs={12} className="mx-auto">
             <Card
               className={`p-2 rounded-2 border-white text-white   ${styles.aboutipem__cards}`}
               style={{ width: "18rem", backgroundColor: "#030737" }}
@@ -70,7 +70,7 @@ export default function Slider() {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={3} xs={10} className="mx-auto">
+          <Col lg={3} md={6} xs={12} className="mx-auto">
             <Card
               className={`p-2 rounded-2 border-white text-white   ${styles.aboutipem__cards}`}
               style={{ width: "18rem", backgroundColor: "#030737" }}
@@ -91,7 +91,7 @@ export default function Slider() {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={3} xs={10} className=" mx-auto">
+          <Col lg={3} md={6} xs={12} className=" mx-auto">
             <Card
               className={`p-2 rounded-2 border-white text-white   ${styles.aboutipem__cards}`}
               style={{ width: "18rem", backgroundColor: "#030737" }}

@@ -22,9 +22,9 @@ const Icons = () => {
   const textDivStyle = {
     position: "fixed",
     top: "60%",
-    right: "-2.5%",
+    right: "-3%",
     transform: "translateY(-50%) rotate(-90deg)",
-    backgroundColor: "yellow",
+    backgroundColor: "rgb(228,184,7)",
     color: "#333",
     padding: "10px",
     borderRadius: "5px",
@@ -34,9 +34,9 @@ const Icons = () => {
   const textDivStyle2 = {
     position: "fixed",
     top: "80%",
-    right: "-2.5%",
+    right: "-2.8%",
     transform: "translateY(-50%) rotate(-90deg)",
-    backgroundColor: "yellow",
+    backgroundColor: "rgb(228,184,7)",
     color: "#333",
     padding: "10px",
     borderRadius: "5px",

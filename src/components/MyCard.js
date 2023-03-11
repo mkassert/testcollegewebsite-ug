@@ -8,67 +8,83 @@ import {
   Col,
   Carousel,
 } from "react-bootstrap";
+import "./MyCard.css";
 
 export default function MyCard() {
   return (
-    <Container fluid style={{ position: "relative" }}>
-      <Container className="border">
+    <Container fluid>
+      <Container className="border outer-MyCard-non-fluid">
         <Row className="p-2">
-          <Col lg={4} sm={12} className=" ">
+          <Col lg={4} sm={12} className="p-5 ">
             <Container>
               <Row>
                 <Col>
-                  <Image
-                    fluid="true"
-                    className="mr-4 h-60 rounded"
-                    thumbnail="true"
-                    src="/Request-Query.jpg"
-                  ></Image>
+                  <div
+                    className="container-outer-relative__over-image"
+                    style={{
+                      backgroundImage: `url('${process.env.PUBLIC_URL}/req.jpg')`,
+                    }}
+                  >
+                    {/* <Image
+                      className="mr-4 w-100 h-100 rounded"
+                      thumbnail="true"
+                      src="/Request-Query.jpg"
+                    ></Image> */}
+                    <Container className="container-query__over-image p-5 bg-tarnsparent">
+                      <Row>
+                        <Col>
+                          <h3 className="fw-bold">Apply And Enroll</h3>
+                          <p>
+                            Every Year, Thousands Of Students Get Selected In
+                            Renowned Companies After Pursuing Programs From Our
+                            UG, PG And Law Campuses. We Are Setting Benchmarks
+                            With Our Remarkable Academic Achievements To Empower
+                            Change And Promote Entrepreneurship.
+                          </p>
+                        </Col>
+                      </Row>
+                    </Container>
+                  </div>
                 </Col>
               </Row>
             </Container>
           </Col>
 
-          <Col lg={8} sm={12}>
-            <Form>
-              <Container fluid>
+          <Col lg={8} sm={12} className="form-side__outer-container">
+            <Form className="p-5">
+              <Container>
+                <Row>
+                  <h2 className="text-start">Request Query</h2>
+                </Row>
+                <Row>
+                  <p className="text-start text-muted">
+                    See the upcoming event and stay updated with every news
+                  </p>
+                </Row>
                 <Row>
                   <Col xs={6} lg={6}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                      <Form.Label>Email address</Form.Label>
-                      <Form.Control type="email" placeholder="Enter email" />
-                      <Form.Text className="text-muted">
+                      <Form.Control type="text" placeholder="Name" />
+                      {/* <Form.Text className="text-muted">
                         We'll never share your email with anyone else.
-                      </Form.Text>
+                      </Form.Text> */}
                     </Form.Group>
                   </Col>
                   <Col xs={6} lg={6}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                      <Form.Label>Email address</Form.Label>
-                      <Form.Control type="email" placeholder="Enter email" />
-                      <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                      </Form.Text>
+                      <Form.Control type="email" placeholder="Email Address" />
                     </Form.Group>
                   </Col>
                 </Row>
                 <Row>
                   <Col xs={6} lg={6}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                      <Form.Label>Email address</Form.Label>
-                      <Form.Control type="email" placeholder="Enter email" />
-                      <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                      </Form.Text>
+                      <Form.Control type="text" placeholder="Phone Number" />
                     </Form.Group>
                   </Col>
                   <Col xs={6} lg={6}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                      <Form.Label>Email address</Form.Label>
-                      <Form.Control type="email" placeholder="Enter email" />
-                      <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                      </Form.Text>
+                      <Form.Control type="text" placeholder="Subject" />
                     </Form.Group>
                   </Col>
                 </Row>
@@ -137,13 +153,24 @@ export default function MyCard() {
                     controlId="exampleForm.ControlTextarea1"
                   >
                     <Form.Label>Example textarea</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
+                    <Form.Control
+                      as="textarea"
+                      rows={6}
+                      placeholder="Describe Your Enquiry!"
+                    />
                   </Form.Group>
                 </Row>
                 <Row>
-                  <Button variant="primary" type="submit">
-                    Send Message
-                  </Button>
+                  <Col lg={10}></Col>
+                  <Col className="ml-auto p-0">
+                    <Button
+                      className="p-2 fs-bolder"
+                      variant="primary"
+                      type="submit"
+                    >
+                      Send Message
+                    </Button>
+                  </Col>
                 </Row>
               </Container>
             </Form>

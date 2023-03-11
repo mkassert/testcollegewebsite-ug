@@ -10,6 +10,7 @@ import {
 
 import "./About.css";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
+import ArrowCircleRightRoundedIcon from "@mui/icons-material/ArrowCircleRightRounded";
 
 export default function About() {
   return (
@@ -22,27 +23,56 @@ export default function About() {
               <Row className="p-2">
                 <Col
                   lg={6}
-                  sm={12}
-                  className="container-form-image__with-div p-5"
+                  xs={12}
+                  className=" mx-auto container-form-image__with-div p-5"
                 >
                   <Image
                     className="mr-4 form-image__with-div"
                     fluid="true"
                     src="/aboutlanding.jpg"
                   ></Image>
-                  <div class="px-2 text-start text-container-form-image__with-div">
-                    <div>
-                      You Are Helping To Lead The Charge; We Can Help You Build
-                      On Your Past Successes And Prepare For Your Great Future.
+
+                  <div class="text-start d-none d-sm-block text-container-form-image__with-div">
+                    <div className="p-4">
+                      <i>
+                        {" "}
+                        You Are Helping To Lead The Charge; We Can Help You
+                        Build On Your Past Successes And Prepare For Your Great
+                        Future.
+                      </i>
                       {"   "}
-                      <FormatQuoteIcon fontSize="large" />
+                      <FormatQuoteIcon
+                        className="d-block"
+                        style={{ fontSize: "90px" }}
+                      />
+                      <p className="fw-bold">- John Peter,Founder</p>
+                    </div>
+                  </div>
+                </Col>
+                <Col xs={10} className="d-sm-none border p-0 mx-auto">
+                  <div
+                    class="text-start  "
+                    style={{ backgroundColor: "#030737", color: "white" }}
+                  >
+                    <div className="p-4">
+                      <i>
+                        {" "}
+                        You Are Helping To Lead The Charge; We Can Help You
+                        Build On Your Past Successes And Prepare For Your Great
+                        Future.
+                      </i>
+                      {"   "}
+                      <FormatQuoteIcon
+                        className="d-block"
+                        style={{ fontSize: "90px" }}
+                      />
                       <p className="fw-bold">- John Peter,Founder</p>
                     </div>
                   </div>
                 </Col>
 
                 <Col lg={6} sm={12}>
-                  <Container fluid>
+                  <Container className="conatainer-about__details">
                     <Row>
                       <Col xs={12} lg={12}>
                         <h1>Where Your Future Comes First</h1>
@@ -79,6 +109,20 @@ export default function About() {
                           Council for Technical Education (AICTE) Govt. of
                           India, Ministry of HRD.
                         </p>
+                      </Col>
+                    </Row>
+                    <Row className="mt-5">
+                      <Col>
+                        <Button className="btn  btn-primary">
+                          <small>Our Alumni Network</small>{" "}
+                          <ArrowCircleRightRoundedIcon />
+                        </Button>
+                      </Col>
+                      <Col>
+                        <Button className="btn btn-primary ">
+                          <small> Course Details</small>
+                          <ArrowCircleRightRoundedIcon />{" "}
+                        </Button>
                       </Col>
                     </Row>
                   </Container>

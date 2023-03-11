@@ -47,7 +47,7 @@ export default function Courses() {
               className=" mx-auto"
             >
               <Card
-                className="p-2 rounded-2 border-white mb-2 fw-bolder coursescards"
+                className="p-2 rounded-0 border-white mb-2 coursescards"
                 style={{ color: "#030737" }}
               >
                 <div style={{ height: "80px", width: "60px" }}>
@@ -60,8 +60,11 @@ export default function Courses() {
                     className={`horizontal-line-${ishover ? "hover" : ""}`}
                   ></div>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    IPEM UG Campus is where your future comes first, as it
+                    inspires students to take on professional degree programs
+                    that can propel their careers towards early success. The
+                    programs offered at IPEM UG Campus include various programs
+                    such as B.Com (Hons), BBA, BCA, B.Ed, and D.EL.Ed.
                   </Card.Text>
                   <Button className="btn my-card-button">
                     {" "}
@@ -83,7 +86,7 @@ export default function Courses() {
               className=" mx-auto"
             >
               <Card
-                className="p-2 rounded-2 border-white mb-2 fw-bold"
+                className="p-2 border-white rounded-0 mb-2 "
                 style={{ color: "#030737" }}
               >
                 <div style={{ height: "80px", width: "60px" }}>
@@ -95,8 +98,11 @@ export default function Courses() {
                     className={`horizontal-line-${ishover ? "hover" : ""}`}
                   ></div>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    The PG Campus at IPEM focuses on nurturing the future of
+                    students with diverse educational backgrounds and interests,
+                    offering full-fledged programs such as MBA and MCA to equip
+                    them with the skills and knowledge necessary for success in
+                    their chosen fields.
                   </Card.Text>
                   <Button className="btn ">
                     {" "}
@@ -118,7 +124,7 @@ export default function Courses() {
               className=" mx-auto"
             >
               <Card
-                className="p-2 mb-2 rounded-2 border-white  fw-bold"
+                className="p-2 mb-2 rounded-0 border-white  "
                 style={{ color: "#030737" }}
               >
                 <div className="ms-2" style={{ height: "80px", width: "60px" }}>
@@ -130,8 +136,11 @@ export default function Courses() {
                     className={`horizontal-line-${ishover ? "hover" : ""}`}
                   ></div>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    The IPEM Law Academy is dedicated to preparing highly
+                    ethical and skilled professionals for the future of the
+                    legal industry. Through our 3-year LLB and 5-year B.A.LLB
+                    courses, we provide students with the knowledge and training
+                    necessary to excel in their future legal careers.
                   </Card.Text>
                   <Button className="btn ">
                     {" "}
