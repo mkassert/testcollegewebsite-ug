@@ -10,12 +10,15 @@
 }
 .card-container__students-testimonials {
   background-color: #bbdefb;
+  font-size: larger;
+  padding: 10%;
+  background-color: rgb(233, 233, 244);
 }
 
 .card-container__students-testimonials:hover,
 .card-container__students-testimonials:active {
-  opacity: 0.8;
-  color: black;
+  color: rgb(143, 143, 143);
+  background-color: rgb(247, 247, 249);
 }
 .contol-carousel {
   color: white;
@@ -24,5 +27,14 @@
 .contol-carousel:hover {
   color: #030737;
   border: 3px solid #030737;
+  border-radius: 50%;
+}
+
+.circle-image {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 50%;
 }
